@@ -48,7 +48,7 @@ class _MorphScreenState extends State<MorphScreen> {
               gradient: RadialGradient(
                 center: const Alignment(-0.5, -0.9),
                 radius: 1.4,
-                colors: [accent.withOpacity(0.16), const Color(0xFF0A0C12)],
+                colors: [accent.withValues(alpha: 0.16), const Color(0xFF0A0C12)],
               ),
             ),
             child: SafeArea(
@@ -66,7 +66,7 @@ class _MorphScreenState extends State<MorphScreen> {
                           child: Container(
                             key: ValueKey(cfg.mode),
                             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-                            decoration: BoxDecoration(color: accent.withOpacity(0.18), borderRadius: BorderRadius.circular(999)),
+                            decoration: BoxDecoration(color: accent.withValues(alpha: 0.18), borderRadius: BorderRadius.circular(999)),
                             child: Text(cfg.title, style: TextStyle(color: accent, fontWeight: FontWeight.w600, fontSize: 12.5)),
                           ),
                         ),
@@ -158,7 +158,7 @@ class _ComponentCard extends StatelessWidget {
         color: const Color(0xFF141824),
         borderRadius: BorderRadius.circular(16),
         border: Border.all(color: const Color(0x22FFFFFF)),
-        boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.3), blurRadius: 14, offset: const Offset(0, 8))],
+        boxShadow: [BoxShadow(color: Colors.black.withValues(alpha: 0.3), blurRadius: 14, offset: const Offset(0, 8))],
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -268,7 +268,7 @@ class _Controls extends StatelessWidget {
                   child: Container(
                     padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 6),
                     decoration: BoxDecoration(
-                      color: on ? accent.withOpacity(0.22) : const Color(0x14FFFFFF),
+                      color: on ? accent.withValues(alpha: 0.22) : const Color(0x14FFFFFF),
                       borderRadius: BorderRadius.circular(999),
                       border: Border.all(color: on ? accent : const Color(0x22FFFFFF)),
                     ),

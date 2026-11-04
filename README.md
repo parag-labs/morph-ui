@@ -59,6 +59,8 @@ intensity, and which components appear all change, so a morph is a genuine re-de
 
 ## Demo
 
+Requires Flutter 3.47.9 (stable, Dart 3.13) or newer — the version CI and the Pages deploy use.
+
 ```bash
 flutter run -d chrome     # web
 flutter run               # a connected device / simulator
